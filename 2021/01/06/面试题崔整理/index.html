@@ -6,15 +6,58 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>面试题崔整理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="[TOC] 前端HTML&#x2F;CSS1. BFC​    块级元素格式化上下文，它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。 触发条件： float的值不为none  overflow的值不为visible  display的值为table-cell、table-caption和inline-blo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题崔整理">
+<meta property="og:url" content="http://example.com/2021/01/06/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%B4%94%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 前端HTML&#x2F;CSS1. BFC​    块级元素格式化上下文，它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。 触发条件： float的值不为none  overflow的值不为visible  display的值为table-cell、table-caption和inline-blo">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190358777-707236966.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190453690-1534183122.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190548583-284396474.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190712862-735744256.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190846262-147075831.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190932040-1416185417.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723191034246-397978340.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723191130912-84975017.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723191239660-1426832625.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723191350090-492620258.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723191350090-492620258.png">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-55c58a901cf835e5e308e4360694505f_720w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-971a09fea16fff72db03d498245bc892_720w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-bd2aa27705ca757fc676a37505a4f992_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-55c58a901cf835e5e308e4360694505f_720w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-971a09fea16fff72db03d498245bc892_720w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-bd2aa27705ca757fc676a37505a4f992_b.jpg">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/850375/201907/850375-20190708151024134-512558007.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/850375/201907/850375-20190708151322530-1608157973.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/850375/201907/850375-20190708151615691-1017611190.png">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/850375/201907/850375-20190708152327825-11086376.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4845448-ab0e961921da5694?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4845448-217723260f75ed90?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4845448-a22cef109d00aa79?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-51e543e8e9a16825af462e63adf3f917_720w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-50ebcd83071fde1d8ca6df434c3ebd72_720w.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201218203432671.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTA4ODQ1Mw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191129173825847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poZW5neGlhbzExMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/16550832-20d0ad3c60a99111.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/701/format/webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-966f734915e4c99223a7c6be9a7a8519_720w.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201219143544369.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTA4ODQ1Mw==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2020/png/8391668/1608621691534-30c786d6-976e-4090-be83-93003b2ae469.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/06/01/t8pJ8U.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2247694-c36f627cc14d6332.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://s1.ax1x.com/2020/09/05/wEkeeK.jpg">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/面试题/node面试题-01/base64的图片">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/531019/201610/531019-20161008233956754-156676185.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408115030567.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hxYWlueW8=,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-01-06T11:34:18.000Z">
+<meta property="article:modified_time" content="2021-01-06T11:45:55.012Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2018.cnblogs.com/blog/1160432/201907/1160432-20190723190358777-707236966.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,16 +193,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-面试题崔整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-面试题崔整理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/06/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%B4%94%E6%95%B4%E7%90%86/">面试题崔整理</a>
+    <h1 class="article-title" itemprop="name">
+      面试题崔整理
     </h1>
   
 
@@ -1900,6 +1941,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -1907,16 +1969,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/06/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%B4%94%E6%95%B4%E7%90%86/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/01/06/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%B4%94%E6%95%B4%E7%90%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -1936,144 +2057,14 @@
 
 
 
-
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
   
 
-        
-        <a href="/2021/01/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-01-01T05:12:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<h2 id="参考文件"><a href="#参考文件" class="headerlink" title="参考文件"></a>参考文件</h2><p>81.70.205.12:4000</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/01/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2021/01/01/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-01T05:10:13.155Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/01/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -2096,8 +2087,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
